@@ -1,0 +1,41 @@
+Let’s create a new theme! 
+1. Create new package and theme directory 
+2. Configure theme fallback 
+3. Copy forward SASS bootstrap files 
+
+
+1. Create new package and theme directory
+- copy basics from default /rwd theme:
+1.1. Create folders
+- 
+1.2. Copy files from rwd (enterprise or default) theme
+- 
+
+2. Configure theme fallback 
+- Copy theme.xml files
+- Configure fallback
+
+3. Copy forward SASS bootstrap files
+- CE and EE 
+● rwd/default/scss/styles.scss 
+● rwd/default/scss/styles-ie8.scss 
+● rwd/default/scss/_var.scss 
+● rwd/default/scss/_framework.scss 
+● rwd/default/scss/_core.scss -> package/theme/scss/_default_core.scss 
+- EE only 
+● rwd/enterprise/scss/enterprise.scss 
+● rwd/enterprise/scss/enterprise-ie8.scss 
+● rwd/enterprise/scss/_core.scss -> package/theme/scss/_enterprise_core.scss 
+- update SASS bootstrap files
+● styles[-ie8].scss import “default_core” 
+● enterprise[-ie8].scss import “enterprise_core” 
+
+4. Populate compass configuration file
+- Change paths
+
+5.
+
+2. Choose tasks
+- Compass only
+- All
+- Use Bower?
