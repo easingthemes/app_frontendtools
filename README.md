@@ -13,12 +13,11 @@ app_frontendtools
 4. Skip passphrase 
 `[Press enter]`
 
-5. start the ssh-agent in the background
-ssh-agent -s
-# Agent pid 59566
+5. start the ssh-agent and add key
+`ssh-agent -s`
 `ssh-add ~/.ssh/easingthemes@github`
 
-6. Copies the contents of the id_rsa.pub file to your clipboard
+6. Copy the contents of the .pub file to your clipboard
 `clip < ~/.ssh/easingthemes@github.pub`
 
 7. Add key to GIT Host (Github, Bitbucket ...)
@@ -49,3 +48,6 @@ ssh-agent -s
 
 6. First push
 `git push -u github master`
+
+7. Pull
+`git pull github master`
